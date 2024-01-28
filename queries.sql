@@ -16,3 +16,5 @@ INSERT INTO student_grades (name, number_grade, fraction_completed)
     VALUES ("Winster", 76, 0.5013);
 INSERT INTO student_grades (name, number_grade, fraction_completed)
     VALUES ("Winstonia", 82, 0.9045);
+
+SELECT name, number_grade, ROUND(fraction_completed * 100) as percent_completed FROM  student_grades;
